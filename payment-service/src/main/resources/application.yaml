@@ -10,9 +10,13 @@ spring:
     username: postgres
     password: postgres
 
+  flyway:
+    default-schema: payments
+    schemas: payments
+
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     properties:
       hibernate:
         default_schema: payments
